@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600&display swap');
+
+:root{
+
+    /* ====== Colors ====== */
+    --hue-color:242;
+
+    /* Hsl Color Mode */
+    --skin-color: hsl(342, 92%, 46%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 19%, 5%);
+    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --box-color: hsl(var(--hue-color), 14%, 18%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+    /* ===== Font and Typography ======= */
+    --body-font: "Poppins", sans-serif;
+
+    /* .5rem = 8px, Irem = 16px, 1.5rем = 24px */
+    --biggest-font-size: 3rem;
+    --hi-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 875rem;
+    --smaller-font-size: 813rem;
+
+    /* ====== Font Weight ===== */
+    --font-medium: 500;
+    --font-bold: 600;
+
+    /* ====== Margenes Bottom ======== */
+    --mb-0-25:25rem;
+    --ab-0-5: 5rem;
+    --ab-0-75: 75rem;
+    --mb-1: 1rem;
+    --ab-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --ab-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /* ==== Z Index ===== */
+    --z-fixed: 10;
+    --z-modal: 100;
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 1204px) {
+    :root {
+        --biggest-font-size: 2rem;
+        --hi-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+Input {
+    font-family: var(-body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+}
+
+button,
+Input {
+    border: none;
+    outline: none;
+}
