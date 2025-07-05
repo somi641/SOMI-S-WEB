@@ -3,49 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>PG</title>
     <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <aside class="sidebar" id="sidebar">
-        <nav class="nav">
-           <div class="nav__logo">
-            <a href="Home.html" class="nav__logo-text">P</a>
-           </div> 
-
-           <div class="nav__menu">
-            <div class="menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="About.html" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="Service.html" class="nav__link">Service</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="Skills.html" class="nav__link">Skills</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="Work.html" class="nav__link">Work</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="Contact.html" class="nav__link">Contact</a>
-                    </li>
-                </ul>
+    
+    <div class="main-container">
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>P</span>G</a>
             </div>
-           </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="About.html"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="Service.html"><i class="fa fa-list"></i>Service</a></li>
+                <li><a href="Skills.html"><i class="fa fa-briefcase"></i>Skills</a></li>
+                <li><a href="Contact.html"><i class="fa fa-comments"></i>Contact</a></li>
+            </ul>
+        </div>
 
-           <div class="btn__share">
-            <i  class="fas fa-map-marker-alt"></i>
-           </div>
-        </nav>
-    </aside>
+        <div class="main-content">
+
+            <section class="home section">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Hello, my name is <span class="name">Promise</span></h3>
+                            <h3 class="my-profession">I'm a <span class="typing">Graphic designer</span></h3>
+                            <p>I'm a Graphic Designer with over 6 years of experience, specializing in creating stunning visuals,
+                            brand identities, and engaging designs for both digital and print media. My expertise spans logo design, 
+                            social media graphics, marketing materials, and more.</p>
+                            <a href="Contact.html" class="btn hire-me">Hire Me</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="Pg bby.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+  
 
 
+    </div>
 
     <script src="Main.js"></script>
 </body>
